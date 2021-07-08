@@ -4,7 +4,9 @@ import {
   View, Text, StyleSheet, Switch, ScrollView
 } from 'react-native';
 
-const ScrollComponent = () => {
+import Icon from 'react-native-vector-icons/FontAwesome';
+
+const ScrollComponent = ({ navigation }) => {
   const [estaLigado, setEstaLigado] = useState(true);
 
   return (
@@ -18,6 +20,11 @@ const ScrollComponent = () => {
         
         <Switch value={estaLigado}
           onValueChange={setEstaLigado} style={{flex: 1}} />
+
+        <Icon.Button backgroundColor="#3b5998"
+          onPress={() => navigation.navigate('Trabalho 10 kkkkkkk')}>
+            Ir para o trabalho 10
+            </Icon.Button>
     </View>
   );
 };

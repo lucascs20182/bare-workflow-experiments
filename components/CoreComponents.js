@@ -5,7 +5,9 @@ import {
   // TextInput
 } from 'react-native';
 
-const CoreComponents = () => {
+import Icon from 'react-native-vector-icons/FontAwesome';
+
+const CoreComponents = ({ navigation }) => {
   const [numero, setNumero] = useState(0);
   const [estaLigado, setEstaLigado] = useState(true);
   // const [texto, setTexto] = useState(true);
@@ -69,6 +71,11 @@ const CoreComponents = () => {
         style={{backgroundColor: 'orange', width: '100%'}} />
 
       <Text>{`Deve trocar o valor aqui também: ${texto}`}</Text> */}
+
+      <Icon.Button backgroundColor="#3b5998"
+          onPress={() => navigation.navigate('Trabalho 9 kkkkkkk')}>
+            Ir para o trabalho 9
+            </Icon.Button>
     </View>
   );
 };

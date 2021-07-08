@@ -1,12 +1,19 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 
-const Ex3 = () => {
+import Icon from 'react-native-vector-icons/FontAwesome';
+
+const Ex3 = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.box1} />
       <View style={styles.box2} />
       <View style={styles.box3} />
+
+      <Icon.Button backgroundColor="#3b5998"
+          onPress={() => navigation.navigate('Trabalho 4 kkkkkkk')}>
+            Ir para o trabalho 4
+      </Icon.Button>
     </View>
   );
 }

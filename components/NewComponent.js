@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {
-  View, StyleSheet, Image, Text, TouchableOpacity
+  View, StyleSheet, Image, Text, TouchableOpacity, Button
 } from 'react-native';
 
 import { Ionicons } from '@expo/vector-icons';
@@ -9,7 +9,7 @@ import { Ionicons } from '@expo/vector-icons';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
-const ImageComponent = ({ navigation }) => {
+const NewComponent = ({ navigation }) => {
   return (
     <View style={styles.container}>
         <Image style={styles.imagemPerfil}
@@ -31,6 +31,7 @@ const ImageComponent = ({ navigation }) => {
         
         <Text style={styles.infosPerfil}>
           <Text style={styles.infosPerfilEnfase}>Biografia</Text>: 
+          Sim, componente reutilizado pra Home AHAHHAHA
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, 
           iusto aperiam autem deleniti, consequatur repudiandae pariatur 
           magni temporibus debitis minima dicta! Numquam inventore unde, 
@@ -40,12 +41,12 @@ const ImageComponent = ({ navigation }) => {
           molestiae repudiandae.
         </Text>
 
-        <TouchableOpacity><Text>Botão</Text></TouchableOpacity>
+        {/* <TouchableOpacity><Text>Botão</Text></TouchableOpacity> */}
 
         <Icon.Button backgroundColor="#3b5998"
-          onPress={() => navigation.navigate('Trabalho 11 kkkkkkk')}>
-            Ir para o trabalho 11
-            </Icon.Button>
+          onPress={() => navigation.navigate('Portfólio da vergonha')}>
+            Voltar para o início
+        </Icon.Button>
     </View>
   );
 };
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'space-around',
     alignItems: 'center',
-    marginVertical: 50
+    // marginVertical: 50
   },
 
   // style parecido com do google
@@ -93,4 +94,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default ImageComponent;
+export default NewComponent;

@@ -1,7 +1,9 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 
-const PrimeiroDesafio = () => {
+import Icon from 'react-native-vector-icons/FontAwesome';
+
+const PrimeiroDesafio = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <View style={styles.retanguloSuperior} />
@@ -32,6 +34,11 @@ const PrimeiroDesafio = () => {
             </View>
 
             <View style={styles.retanguloInferior} />
+
+            <Icon.Button backgroundColor="#3b5998"
+          onPress={() => navigation.navigate('Trabalho 8 kkkkkkk')}>
+            Ir para o trabalho 8
+            </Icon.Button>
         </View>
     );
 }
