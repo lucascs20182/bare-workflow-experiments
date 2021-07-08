@@ -4,7 +4,8 @@ import {
   View, StyleSheet, Image, Text, 
 } from 'react-native';
 
-import { Ionicons } from '@expo/vector-icons';
+// import { Ionicons } from '@expo/vector-icons';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const ImageComponent = () => {
   return (
@@ -14,8 +15,8 @@ const ImageComponent = () => {
 
         <Text style={styles.infosPerfilEnfase}>
           Lucas da Silva Cruz
-          <Ionicons name="md-checkmark-circle" size={16} color="green"
-            style={styles.verifiedIcon} />
+          {/* <Ionicons name="md-checkmark-circle" size={16} color="green"
+            style={styles.verifiedIcon} /> */}
         </Text>
         
         <Text style={styles.infosPerfil}>
@@ -30,7 +31,12 @@ const ImageComponent = () => {
           sapiente vero reiciendis exercitationem corporis! Fuga, voluptas 
           enim sequi qui dolore autem expedita praesentium reiciendis impedit 
           quidem dolores corrupti ullam maxime numquam aut accusantium 
-          molestiae repudiandae.</Text>
+          molestiae repudiandae.
+        </Text>
+
+        <Icon.Button name="facebook" backgroundColor="#3b5998">
+          Adicione Lucas no Facebook
+        </Icon.Button>
     </View>
   );
 };
