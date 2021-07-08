@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "bare-workflow-experiments",
+    "slug": "bare-workflow-experiments",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "bare-workflow-experiments"
+}
