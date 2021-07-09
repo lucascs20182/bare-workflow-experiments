@@ -37,10 +37,15 @@ const NewComponent = ({ navigation }) => {
             Mas se você é RH só to zoando, ok? hahaha
         </Text>
 
-        <Icon.Button backgroundColor="#3b5998"
+        {/* <Icon.Button backgroundColor="#3b5998"
           onPress={() => navigation.navigate('Trabalho 1 kkkkkkk')}>
             Ir para o trabalho 1
-        </Icon.Button>
+        </Icon.Button> */}
+
+        {/* <Icon.Button backgroundColor="#3b5998"
+          onPress={() => navigation.openDrawer()}>
+            Teste
+        </Icon.Button> */}
     </View>
   );
 };

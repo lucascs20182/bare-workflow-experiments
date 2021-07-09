@@ -4,8 +4,10 @@ import { StatusBar } from 'expo-status-bar';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
 const { Navigator, Screen } = createStackNavigator();
+const Drawer = createDrawerNavigator();
 
 import Home from './components/Home';
 import Ex1 from './components/Ex1';
@@ -25,7 +27,7 @@ export default function App() {
     <>
       <NavigationContainer>
         <StatusBar hidden />
-        <Navigator >
+        {/* <Navigator >
           <Screen name="Portfólio da vergonha" component={Home} />
           <Screen name="Trabalho 1 kkkkkkk" component={Ex1} />
           <Screen name="Trabalho 2 kkkkkkk" component={Ex2} />
@@ -38,7 +40,11 @@ export default function App() {
           <Screen name="Trabalho 9 kkkkkkk" component={ScrollComponent} />
           <Screen name="Trabalho 10 kkkkkkk" component={ImageComponent} />
           <Screen name="Trabalho 11 kkkkkkk" component={NewComponent} />
-        </Navigator>
+        </Navigator> */}
+        <Drawer.Navigator initialRouteName="Home">
+          <Drawer.Screen name="Home" component={Home} />
+          <Drawer.Screen name="Ex1" component={Ex1} />
+        </Drawer.Navigator>
       </NavigationContainer>
     </>
   );
